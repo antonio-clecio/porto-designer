@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --main-color: #151221;
+  --secondary-color: #242238;
+  --tertiary-color: #6448f1;
+  --primary-text-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--main-color);
+  color: var(--primary-text-color);
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+header .header {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 112px;
+  z-index: 10;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.main-title {
+  padding-left: 8px;
+  padding-right: 8px; 
+}
+
+.main-title h2 {
+  display: inline-block;
+  width: auto;
+  height: 28px;
+  margin: 40px 18px 40px 0;
+  font-weight: 500;
+}
+
+.main-title h2 span {
+  color: var(--tertiary-color);
+  font-weight: 700;
+  transition: all .3s ease-in-out;
+}
+
+.main-title h2 span:hover {
+  color: #0b5394;
+}
+
+.navegation {
+  padding-left: 8px;
+  padding-right: 8px;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.navegation ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 176%;
+}
+
+.navegation ul li {
+  margin: 0 24px;
+  padding: 0;
+}
+
+.navegation ul li a {
+  transition: all .3s ease-in-out;
+}
+
+.navegation ul li a:hover {
+  color: #0b5394;
+}
+
+.btn {
+  transition: all .3s ease-in-out;
+}
+
+.btn {
+  background: var(--tertiary-color);
+  display: inline-block;
+  width: auto;
+  height: 56px;
+  padding: 12px 32px 16px;
+  margin: 0;
+  outline: none;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 176%;
+  text-align: center;
+  transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0b5394;
+}
