@@ -18,6 +18,7 @@ body {
   background: var(--main-color);
   color: var(--primary-text-color);
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -34,7 +35,7 @@ header .header {
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -46,8 +47,8 @@ header .header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-left: 40px;
-  margin-right: 40px;
+  /* margin-left: 40px;
+  margin-right: 40px; */
 }
 
 .main-title {
@@ -63,7 +64,7 @@ header .header {
   font-weight: 500;
 }
 
-.main-title h2 span {
+.main-title .span {
   color: var(--tertiary-color);
   font-weight: 700;
   transition: all .3s ease-in-out;
@@ -130,4 +131,80 @@ header .header {
 
 .btn:hover {
   background-color: #0b5394;
+}
+
+section#home {
+  display: block;
+  width: 100%;
+  padding: 48px 0 80px;
+}
+
+.home-container {
+  width: 60%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.home-text {
+  display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+  flex-direction: column;
+}
+
+section .home-text h4 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  opacity: .7;
+  color: var(--tertiary-color);
+}
+
+section .home-text h1 {
+  display: block;
+  margin: 0 0 32px;
+  font-weight: 700;
+  font-size: 72px;
+}
+
+section .home-text p {
+  margin: 0 0 56px;
+  opacity: .9;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 182%;
+}
+
+.home-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-buttons .btn-2 {
+  background: transparent;
+  display: inline-block;
+  width: auto;
+  height: 56px;
+  padding: 12px 45px 16px;
+  margin-inline: 8px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 176%;
+  text-align: center;
+  transition: all .3s ease-in-out;
+}
+
+.home-buttons .btn-2:hover {
+  background-color: var(--main-color);
+  filter: brightness(1.3);
 }
