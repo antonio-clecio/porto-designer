@@ -36,7 +36,7 @@ header .header {
 }
 
 .container {
-  width: 60%;
+  width: 90%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -228,7 +228,7 @@ section#services {
 }
 
 #services .content-services h2 {
-  width: 60%;
+  width: 55%;
   display: inline-block;
   font-weight: 700;
   font-size: 48px;
@@ -238,6 +238,7 @@ section#services {
 
 #services .content {
   display: flex;
+  flex-wrap: wrap
   
 }
 
@@ -247,6 +248,9 @@ section#services {
   position: relative;
   width: 100%;
   min-height: 1px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-bottom: 8px;
 }
 
 #services .card {
@@ -276,4 +280,76 @@ section#services {
   font-weight: 400;
   font-size: 17px;
   line-height: 176%;
+  margin-bottom: 30px;
+}
+
+#services .badge-text {
+  display: inline;
+  width: auto;
+  height: 28px;
+  padding: 10px 20px;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 40px;
+  transition: all .3s ease-in-out;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 13px;
+}
+
+#services .badge-text:hover {
+  background-color: var(--primary-color);
+}
+
+section#about {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 64px 0 80px;
+}
+
+#about .inner-content-about {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+#about .about-img {
+  padding: 8px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #242238 0%, #151221 100%);
+  border-radius: 5px;
+}
+
+#about .about-img img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+}
+
+#about .about-content {
+  padding-left: 250px;
+  padding-right: 8px;
+}
+
+#about .about-content h2 {
+  display: block;
+  margin: 0 0 24px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+}
+
+#about .content-paragraph {
+  display: block;
+  margin: 0 0 56px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 175%;
+}
+
+#about .content-paragraph p {
+  display: block;
+  margin: 0 0 24px;
 }
